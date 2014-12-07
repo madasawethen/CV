@@ -1,0 +1,1187 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: black;
+	background-color: white;
+	line-height: 1.1;
+}
+
+a {
+	text-decoration: none;
+	color: #1FA2E1;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0 0 0 0;
+}
+
+h1 {
+/*	width: 291px;
+	height: 54px;
+	display: block;*/
+/*	margin-top: 25px;
+	float: left; */
+}
+
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.center-content {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*----------------------------------------------------------------------------- 
+=03 HEADER + NAVIGATION
+-----------------------------------------------------------------------------*/
+
+header {
+	background-color: white;
+}
+
+#resume-header {
+	width: 70%;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 3%;
+	overflow: hidden;
+}
+
+#main-nav {
+	float: right;
+	width: 50%;
+	height: 100%;
+/*	margin-right: 3%;*/
+}
+
+#header-info{
+	float: left;
+	width: 40%;
+/*	margin-left: 2%;*/
+	margin-top: 3%;
+}
+
+#header-info a {
+	text-decoration: none;
+	color: black;
+	margin-bottom: 10%;
+	margin-top: 5%;
+
+}
+
+#header-info h1 {
+	font-family: Lora;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 3em;
+	margin-left: 3%;
+	color: black;
+	/*margin-bottom: 10%;*/
+	margin-top: 5%;
+
+}
+
+#header-info h2 {
+	font-family: Lora;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.8em;
+	margin-left: 2.7%;
+	color: black;
+	margin-bottom: 10%;
+	padding-left: 4%;
+/*	margin-top: 5%;*/
+
+}
+
+#main-nav a {
+	float: right;
+	display: block;
+	height: 55%;
+	width: 7%;
+	margin-right: 2%;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	/*color: #ccc;*/
+	/*padding: 36px 18px 0 18px;*/
+	/*font-size: 17px;*/ 
+}
+
+#white {
+	background-color: white;
+	border: #cccccc 1px solid;
+/*	height: 5%;
+	width: 3%;*/
+}
+
+#pink {
+	background-color: #FF0093;
+	border: #cccccc 1px solid;
+/*	height: auto;
+	width: 3%;*/
+}
+
+#yellow {
+	background-color: yellow;
+	border: #cccccc 1px solid;
+/*	height: auto;
+	width: 3%;*/
+}
+
+#blue {
+	background-color: blue;
+	border: #cccccc 1px solid;
+/*	height: auto;
+	width: 3%;*/
+
+}
+
+#white:hover {
+	background-color: #CFCFCF;
+}
+
+#pink:hover {
+	background-color: #BF006E;
+}
+
+#yellow:hover {
+	background-color: #E5E500;
+}
+
+#blue:hover {
+	background-color: #0000BF;
+}
+
+/*----------------------------------------------------------------------------- 
+=04 MOBILE NAV
+-----------------------------------------------------------------------------*/
+
+#mobile-nav {
+	display: none;
+}
+
+
+/*----------------------------------------------------------------------------- 
+=05 RESUME_COLLAPSE
+-----------------------------------------------------------------------------*/
+#resume_collapse {
+	clear: both;
+	height: 100%;
+	width: 100%;
+}
+
+#mti-header {
+	background-color: #FF0093;
+	color: white;
+	width: 100%;
+	height: 10%;
+	margin: 0 auto;
+}
+
+#mti-header.reverse-mti-header {
+	background-color: white;
+	color: #FF0093;
+	border-bottom: #FF0093 2px solid;
+}
+
+#front-mti{
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#front-mti h3 {
+	float: left;
+	font-family: 'Lora';
+	/*color: white;*/
+	font-size: 1.6em;
+	font-weight: 700;
+	font-style: bold;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 55px;
+}
+
+#front-mti h4 {
+	float: right;
+	font-family: 'Lora';
+	/*color: rgba(255,255,255,.7);*/
+	font-size: 1.5em;
+	font-weight: 600;
+	font-style: normal;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 55px;
+}
+
+#spacemaker {
+	clear: both;
+	height: 60px;
+	width: 100%;
+}
+/*----------------------------------------------------------------------------- 
+=06 TIM GUNN
+-----------------------------------------------------------------------------*/
+
+#tim-gunn {
+	width: 100%;
+	margin: 0 auto;
+
+	}
+
+#tim-gunn h1 {
+	color: #FF0093;
+	/*opacity: .7;*/
+	font-family: 'Lora', Arial;
+	/*font-size: 1.5em;*/
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: .5%;
+}
+
+/*----------------------------------------------------------------------------- 
+=06 WINDOW
+-----------------------------------------------------------------------------*/
+
+#window {
+	/*display: none;*/
+	width: 100%;
+	height: 600px;
+	margin-bottom: 5%;
+	overflow: hidden;
+}
+/*----------------------------------------------------------------------------- 
+=07 MANAGER
+-----------------------------------------------------------------------------*/
+
+#mti-content{
+	display: none;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#manager {
+	background-color: white;
+	height: 545px;
+	color: black;
+	overflow: hidden;
+}
+
+#manager h3 {
+	font-family: 'Lora';
+	font-size: 1.5em;
+	font-weight: 600;
+	font-style: bold;
+	float: left;
+}
+
+#manager h4 {
+	font-family: 'Lora';
+	font-size: 1.5em;
+	font-weight: 500;
+	font-style: normal;
+	float: right;
+}
+
+#manager-copy {
+	display: inline-block;
+	clear: both;
+	margin-top: 5%;
+	line-height: 1.5em;
+}
+
+#manager-copy p {
+	font-family: 'Roboto', serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.5em;
+	/*font-style: ;*/
+
+}
+
+#manager-portfolio {
+	margin-top: 3%;
+}
+
+#manager-portfolio img{
+	width: 19%;
+
+}
+ #manager-next {
+ 	font-family: 'Lora';
+ 	font-style: bold;
+ 	font-weight: 600;
+ 	font-size: 1.5em;
+ 	color: black;
+ 	text-align: right;
+ 	display: block;
+ 	margin-top: 3%;
+ 	margin-bottom: 5%;
+ 	/*float: right;*/
+
+ }
+
+ #manager-next:hover {
+ 	color: #FF0093;
+ 	text-decoration: none;
+ }
+
+ /*_______________________________DESIGNER*/
+
+#designer {
+	display: none;
+	background-color: white;
+	height: 545px;
+	color: black;
+	overflow: hidden;
+}
+
+#designer h3 {
+	font-family: 'Oswald';
+	font-size: 1.5em;
+	font-weight: 700;
+	font-style: bold;
+	float: left;
+}
+
+#designer h4 {
+	font-family: 'Oswald';
+	font-size: 1.5em;
+	font-weight: 500;
+	font-style: normal;
+	float: right;
+}
+
+#designer-copy {
+	display: inline-block;
+	clear: both;
+	margin-top: 5%;
+	line-height: 1.7em;
+}
+
+#designer-copy p {
+	font-family: 'Abel';
+	font-size: 1.5em;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+#designer-portfolio {
+	margin-top: 3%;
+}
+
+#designer-portfolio img {
+	width: 19%;
+
+}
+ #designer-next {
+ 	font-family: 'Oswald';
+ 	font-style: bold;
+ 	font-weight: 600;
+ 	font-size: 1.5em;
+ 	color: black;
+ 	text-align: right;
+ 	display: block;
+ 	margin-top: 5%;
+ 	margin-bottom: 5%;
+ 	/*float: right;*/
+
+ }
+
+ #designer-next:hover {
+ 	color: #FF0093;
+ 	text-decoration: none;
+ }
+
+/*_______________________________PMS*/
+
+#PMS {
+	display: none;
+	background-color: white;
+	height: 545px;
+	color: black;
+	overflow: hidden;
+}
+
+#PMS h3 {
+	font-family: 'Changa One';
+	font-size: 1.7em;
+	font-weight: 600;
+	font-style: bold;
+	float: left;
+}
+
+#PMS h4 {
+	font-family: 'Poiret One';
+	font-size: 1.6em;
+	font-weight: 500;
+	font-style: normal;
+	float: right;
+}
+
+#PMS-copy {
+	display: inline-block;
+	clear: both;
+	margin-top: 5%;
+	line-height: 1.6em;
+}
+
+#PMS-copy p {
+	font-family: 'Cuprum';
+	font-size: 1.4em;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+#PMS-portfolio {
+	margin-top: 3%;
+}
+
+#PMS-portfolio img {
+	width: 19%;
+
+}
+ #PMS-next {
+ 	font-family: 'Changa One';
+ 	font-style: bold;
+ 	font-weight: 600;
+ 	font-size: 1.5em;
+ 	color: black;
+ 	text-align: right;
+ 	display: block;
+ 	margin-top: 5%;
+ 	margin-bottom: 5%;
+ 	/*float: right;*/
+
+ }
+
+ #PMS-next:hover {
+ 	color: #FF0093;
+ 	text-decoration: none;
+ }
+
+ /*_______________________________reception*/
+
+#reception {
+	display: none;
+	background-color: white;
+	height: 545px;
+	color: black;
+	overflow: hidden;
+}
+
+#reception h3 {
+	font-family: 'Libre Baskerville';
+	font-size: 1.7em;
+	font-weight: 600;
+	font-style: bold;
+	float: left;
+}
+
+#reception h4 {
+	font-family: 'Libre Baskerville';
+	font-size: 1.6em;
+	font-weight: 500;
+	font-style: normal;
+	float: right;
+}
+
+#reception-copy {
+	display: inline-block;
+	clear: both;
+	margin-top: 5%;
+	line-height: 1.6em;
+}
+
+#reception-copy p {
+	font-family: 'Libre Baskerville';
+	font-size: 1.2em;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+#reception-portfolio {
+	margin-top: 3%;
+}
+
+#reception-portfolio img {
+	width: 19%;
+
+}
+ #reception-next {
+ 	font-family: 'Libre Baskerville';
+ 	font-style: bold;
+ 	font-weight: 600;
+ 	font-size: 1.5em;
+ 	color: black;
+ 	text-align: right;
+ 	display: block;
+ 	margin-top: 4%;
+ 	margin-bottom: 6%;
+ 	/*float: right;*/
+
+ }
+
+ #reception-next:hover {
+ 	color: #FF0093;
+ 	text-decoration: none;
+ }
+
+/*----------------------------------------------------------------------------- 
+=08 THEATRE
+-----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+#theatre-wrapper {
+/*	background: url(../img/theatre1.jpg) no-repeat;
+	background-size: cover; */
+	margin: 0 auto;
+	height: 700px;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: black;
+	line-height: 1.1;
+	z-index: -1;
+}
+
+.slide {
+	display: none;
+}
+
+/*.silde-current {
+
+}*/
+/*----------------------------------------------------------------------------- 
+=08 THEATRE
+-----------------------------------------------------------------------------*/
+
+
+#theatre-header { 
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;
+	background: url(../img/theatrehead_02_01.jpg) no-repeat;
+	background-size: cover;
+	background-position: bottom center; 
+	overflow: hidden;
+}
+
+#theatre-header.reverse-theatre-header {
+	border-bottom: yellow 2px solid;
+	/*margin-bottom: 1;*/
+}
+
+#front-theatre { 
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#front-theatre h3 {
+	float: left;
+	color: yellow;
+	font-family: 'Archivo Black', Arial;
+	font-size: 2em;
+	font-weight: 600;
+	font-style: bold;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 48px;
+
+}
+
+#front-theatre h4 {
+	float: right;
+	color: yellow;
+	/*opacity: .7;*/
+	font-family: 'Archivo Black', Arial;
+	font-size: 1.5em;
+	font-weight: 600;
+	font-style: normal;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 55px;
+}
+
+
+/*----------------------------------------------------------------------------- 
+=09 MAE WEST
+-----------------------------------------------------------------------------*/
+
+#mae-west {
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+
+	}
+
+#mae-west h1 {
+	color: yellow;
+	/*opacity: .7;*/
+	font-family: 'Roboto', Arial;
+	/*font-size: 1.5em;*/
+	font-weight: 600;
+	font-style: bold;
+	font-size: 3em;
+	padding-top: .5%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/*----------------------------------------------------------------------------- 
+=09 MAE WEST
+-----------------------------------------------------------------------------*/
+
+#theatre-content{ /*all internal theatre content*/
+	display: none;
+	clear: both;
+	width: 100%;
+	height: 620px;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	background: url(../img/theatrebottom_02_02.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top; 
+}
+
+#inner-theatre {
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+#theatre-nav {
+	width: 25%;
+	height: 350px;
+	/*margin: 10%;*/
+	margin-top: 7%;
+	padding: 5%;
+	background-color: rgba(255, 255, 255, .5);
+	float: left;
+}
+
+#theatre-nav a{
+ 	display: block;
+ 	text-decoration: none;
+ 	color: black;
+ 	line-height: 1.4;
+ 	font-size: 1.3em;
+ 	font-family: 'Roboto', Arial;
+ 	font-style: medium;
+ 	font-weight: 400;
+}
+
+/*#theatre-nav a:visited {
+	color: yellow;
+}*/
+
+#theatre-nav a:hover {
+ 	/*display: block;*/
+ 	text-decoration: none;
+ 	color: yellow;
+}
+
+/*.active{
+	color: yellow;
+	text-decoration: underline;
+}*/
+
+/*#theatre-nav .current-menu-item a:hover {
+	color: yellow;
+}*/
+
+#mobile-theatre-nav {
+	display: none;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+=09 YELLOW BOX
+-----------------------------------------------------------------------------*/
+
+#yellow-box {
+	display: none;
+	float: right;
+	margin-top: 7%;
+	margin-left: 2%;
+	/*margin-bottom: -5%;*/
+	padding: 5%;
+	background-color: yellow;
+	opacity: .8;
+	width: 50%;
+	height: 350px;
+	overflow: scroll;
+}
+
+.slide-current {
+	width: 100%;
+	/*height: 350px;*/
+	/*padding-bottom: 50px;*/
+	/*overflow: scroll;*/
+}
+
+#yellow-box p {
+	color: black;
+ 	line-height: 1.3;
+ 	font-size: 1.3em;
+ 	font-family: 'Roboto', Arial;
+ 	font-style: bold;
+ 	font-weight: 600;
+
+
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------- 
+=10 OTHER
+-----------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+#other-header {
+	margin: 0 auto;
+	height: 80px;
+	width: 100%;
+	background: url(../img/otherhead_01.jpg) no-repeat;
+	background-size: cover;
+	background-position: bottom center; 
+}
+
+/*.slide {
+	display: none;
+}*/
+
+.silde-current {
+
+}
+/*----------------------------------------------------------------------------- 
+=08 OTHER
+-----------------------------------------------------------------------------*/
+#other-content{ /*all internal theatre content*/
+	display: none;
+	width: 100%;
+	height: 620px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(../img/otherhead_02.jpg) no-repeat;
+	background-size: cover;
+	background-position: top center; 
+}
+
+#inner-other {
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+#front-other { 
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#front-other h3 {
+	float: left;
+	color: black;
+	font-family: 'Russo One', Arial;
+	font-size: 2em;
+	font-weight: 400;
+	font-style: normal;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 50px;
+
+}
+
+#front-other h4 {
+	float: right;
+	color: black;
+	opacity: .7;
+	font-family: 'Russo One', Arial;
+	font-size: 1.5em;
+	font-weight: 700;
+	font-style: bold;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 55px;
+}
+
+#other-header.reverse-other-header {
+	border-bottom: black 2px solid;
+	/*margin-bottom: 1;*/
+}
+
+
+/*----------------------------------------------------------------------------- 
+=09 MAE WEST
+-----------------------------------------------------------------------------*/
+
+#stephen-sondheim {
+/*	width: 70%;
+	margin: 0 auto;*/
+
+	}
+
+#stephen-sondheim h1 {
+	color: black;
+	/*opacity: .7;*/
+	font-family: 'Montserrat', Arial;
+	/*font-size: 1.5em;*/
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3em;
+	padding-top: .5%;
+	padding-bottom: 0;
+	margin-bottom:4%;
+	margin-top: 1%;
+}
+
+/*----------------------------------------------------------------------------- 
+=09 MAE WEST
+-----------------------------------------------------------------------------*/
+
+
+#other-nav {
+	width: 100%;
+	height: 15px;
+/*	margin: 10%;*/
+	margin-top: 4%;
+/*	padding: 3%;*/
+	padding-left: 2%;
+	padding-top: 2%;
+	padding-bottom: 5.5%;
+	background-color: rgba(255, 255, 255, 1);
+	/*loat: left;*/
+}
+
+#other-nav a {
+	text-align: vertical;
+ 	display: inline-block;
+ 	text-decoration: none;
+ /*	padding-top: 2%;*/
+ 	color: black;
+ 	line-height: 1.2;
+ 	font-size: 1.2em;
+ 	font-family: 'Montserrat', Arial;
+ 	font-style: medium;
+ 	font-weight: 400;
+ 	/*padding-bottom: 2%;*/
+}
+
+#other-nav a:hover {
+ 	/*display: block;*/
+ 	text-decoration: none;
+ 	color: blue;
+}
+
+#otherlink3 {
+	color: red;
+}
+
+#other-nav #PSC a {
+	font-family: 'Changa One', 'Montserrat', Arial;
+	font-style: bold;
+}
+
+#mobile-other-nav {
+	display: none;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+=09 WHITE BOX
+-----------------------------------------------------------------------------*/
+
+#white-box {
+	display: none;
+	float: right;
+	margin-top: 5%;
+	margin-left: 2%;
+	/*margin-bottom: -5%;*/
+	padding: 5%;
+	background-color: white;
+	opacity: .8;
+	width: 50%;
+	height: 250px;
+	overflow: scroll;
+}
+
+.slide-current {
+	width: 100%;
+	/*height: 350px;*/
+	/*padding-bottom: 50px;*/
+	/*overflow: scroll;*/
+}
+
+#white-box p {
+	color: black;
+ 	line-height: 1.3;
+ 	font-size: 1.3em;
+ 	font-family: 'Montserrat', Arial;
+ 	font-style: bold;
+ 	font-weight: 600;
+ 	/*padding-bottom: 50px;*/
+ 	/*margin-bottom: 5%;*/
+
+}
+
+
+
+/*@media only screen and (max-width: 920px) {
+	#wrapper {
+		width: 920px;
+	}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*THIS IS ALL MY ORIGINAL SHITTY CODE*/
+
+/*/*//**------------------GENERAL STYLE CSS*/
+
+/*body {
+	font-size: 16px;
+	color: #393e43;
+	background-color: white;
+	margin: 0 auto;
+	width: 60%;
+}
+
+h1 {
+	color: #393e43;
+	font-size: 2em;
+	font-family: Arial, sans-serif;
+
+}
+
+h2 {
+	color: #6c6c6c;
+	font-size: 1.5em;
+	font-family: Arial, sans-serif;
+
+}
+
+h3 {
+	color: #393e43;
+	font-size: 1.3em;
+	font-family: Arial, sans-serif;
+}
+
+h4 {
+	color: #7d7d7d;
+	font-size: 1.2em;
+	font-family: Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #393e43;
+	font-size: 1em;
+	font-family: Arial, sans-serif;
+}
+
+p {
+	color: #7d7d7d;
+	font-size: 1em;
+	font-family: Arial, sans-serif;
+
+}
+*/
+
+
+
+/*------------------------wrapper DIV*/
+
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+/*.center-content {
+	margin: 0 auto;
+	width: 80%;
+}*/
+/*------------------------resume_header DIV*/
+
+
+
+/*------------------------header_info DIV*/
+
+/*#header_info {
+
+
+}*/
+
+/*------------MAIN NAV*/
+
+/*nav {
+
+}
+
+
+#main-nav {
+		overflow: hidden;
+		position: absolute;
+		top: 5%;
+		right: 20%;
+}
+
+#main-nav a {
+	float: right;
+	display: block;
+	height: 5%;
+	color: #ccc;
+
+}
+
+#mobile-nav {
+	display: none;
+}
+
+#mobile-nav a {
+	display: none;
+	
+	
+}*/
+
+
+
+
+/*------------------------RESUME_COLLAPSE DIV*/
+/*
+
+/*-------------------------------MTI DIV*/
+
+/*#mti {
+	clear: both;
+	background-color: #FF0086;
+	color: white;
+	font-family: ;
+}
+*/
+/*-------------------Manager DIV*/
+
+/*#manager {
+	background-color: white;
+	color: #FF0086;
+	margin: 0 auto;
+}
+
+#Tim_Gunn {
+	display: none;
+}*/
+
+
+
+/*-------------------Designer DIV*/
+/*#designer {
+	display: none;
+}*/
+/*-------------------PMS DIV*/
+
+/*#PMS {
+	display: none;
+}*/
+
+/*-------------------Reception DIV*/
+/*
+#reception {
+	display: none;
+}
+*/
+
+
+/*-------------------------------THEATRE DIV*/
+
+/*-------------------THEATRE NAV*/
+/*-------------------SLIDES*/
+
+/*-------------------------------OTHER DIV*/
+
+/*-------------------OTHER NAV*/
+/*-------------------SLIDES*/
+
+/*---------------------------------------------RESPONSIVE*/
+
+/*-------------------------------MTI DIV*/
+
+/*-------------------Manager DIV*/
+/*-------------------Designer DIV*/
+/*-------------------PMS DIV*/
+/*-------------------Reception DIV*/
+
+
+
+/*-------------------------------THEATRE DIV*/
+
+/*-------------------THEATRE NAV*/
+/*-------------------SLIDES*/
+
+/*-------------------------------OTHER DIV*/
+
+/*-------------------OTHER NAV*/
+/*-------------------SLIDES*/*/*/
