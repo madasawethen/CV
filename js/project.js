@@ -170,6 +170,8 @@ $(document).ready(function(){
 		$("#manager").show();
 	});	
 
+	var otherImages = ["portlandstage","newjerseyshakes", "masongross", "chitarivera", "bruriah", "hezatramp"];
+
 	$("#other-nav a").click(function(){
 	// evt.preventDefault();
 		if(last_other == -1) {
@@ -180,6 +182,9 @@ $(document).ready(function(){
 		}
 		 var div_id = $('#other-nav a').index($(this));
 		 $("#otherSlide" + div_id).fadeIn(1000);
+		 $("#other-header").css("background-image", "url(img/"+otherImages[div_id]+"_01.jpg)");
+		 $("#other-content").css("background-image", "url(img/"+otherImages[div_id]+"_02.jpg)");
+
 		 
 		 // $("#other-content").css("background-image", "url(img/hezatramp_02.jpg)");
 		 // $("#other-header").css({'background-image': 'url(img/hezatramp_01.jpg)',
@@ -189,13 +194,13 @@ $(document).ready(function(){
 		 // $("#stephen-sondheim h1").css("color", "#47a9ce");
 		 // $("#white-box p").css("color", "#47a9ce");
 
-		 $("#other-content").css("background-image", "url(img/chitarivera_02.jpg)");
-		 $("#other-header").css({'background-image': 'url(img/chitarivera_01.jpg)',
-								'border-color': 'red'});
-		 $("#front-other h3").css("color", "red");
-		 $("#front-other h4").css("color", "red");
-		 $("#stephen-sondheim h1").css("color", "red");
-		 $("#white-box p").css("color", "red");
+		 // $("#other-content").css("background-image", "url(img/chitarivera_02.jpg)");
+		 // $("#other-header").css({'background-image': 'url(img/chitarivera_01.jpg)',
+			// 					'border-color': 'red'});
+		 // $("#front-other h3").css("color", "red");
+		 // $("#front-other h4").css("color", "red");
+		 // $("#stephen-sondheim h1").css("color", "red");
+		 // $("#white-box p").css("color", "red");
 
 		 last_other = div_id;
 		 return false;
