@@ -80,9 +80,25 @@ $(document).ready(function(){
 
 	};
 
+	var resetOther = function(event){
+ 		// if(last_other != -1 && !$(this).parents("#other-nav").is("#other-nav") && !$(this).parents("#white-box").is("#white-box")) {
+ 			$("#otherSlide" + last_other).fadeOut(1000);
+ 			$("#white-box").fadeOut(1000);
+ 			$("#other-header").css("background-image", "url(img/otherhead_01.jpg)");
+		 	$("#other-content").css("background-image", "url(img/otherhead_02.jpg)");
+		 	$("#front-other h3").css("color", "black");
+		 	$("#front-other h4").css("color", "black");
+		 	$("#stephen-sondheim h1").css("color", "black");
+		 	$("#other-header.reverse-other-header").css("border-color", "black");
+ 			last_other = -1;
+ 		// }
+ 		
+	};
+
 	var other = function(){
 		$("#other-content").slideToggle(1000);
 		$( "#other-header" ).toggleClass('reverse-other-header');
+		resetOther();
 		if (otherExpanded) {
 			$("#white-box").hide();
 			$("#otherSlide" + last_other).hide();
@@ -212,6 +228,13 @@ $(document).ready(function(){
 		 return false;
 
  	});
+	
+	 	$("#other-content").click(function(event){
+ 		if(last_other != -1 && !$(this).parents("#other-nav").is("#other-nav") && !$(this).parents("#white-box").is("#white-box")) {
+ 			resetOther();
+ 		}
+ 		
+	});
 
 
 });
