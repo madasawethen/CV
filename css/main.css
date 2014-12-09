@@ -950,7 +950,8 @@ header {
 }
 
 #white-box p {
-	color: black;
+	opacity: 1;
+	/*color: black;*/
  	line-height: 1.3;
  	font-size: 1.3em;
  	font-family: 'Montserrat', Arial;

@@ -171,6 +171,7 @@ $(document).ready(function(){
 	});	
 
 	var otherImages = ["portlandstage","newjerseyshakes", "masongross", "chitarivera", "bruriah", "hezatramp"];
+	var otherColor = ["#ff0033","#ff9900", "#ccccff", "red", "#99ff00", "#3399cc"];
 
 	$("#other-nav a").click(function(){
 	// evt.preventDefault();
@@ -184,6 +185,11 @@ $(document).ready(function(){
 		 $("#otherSlide" + div_id).fadeIn(1000);
 		 $("#other-header").css("background-image", "url(img/"+otherImages[div_id]+"_01.jpg)");
 		 $("#other-content").css("background-image", "url(img/"+otherImages[div_id]+"_02.jpg)");
+		 $("#front-other h3").css("color", otherColor[div_id]);
+		 $("#front-other h4").css("color", otherColor[div_id]);
+		 $("#stephen-sondheim h1").css("color", otherColor[div_id]);
+		 $("#white-box p").css("color", otherColor[div_id]);
+		 $("#other-header.reverse-other-header").css("border-color", otherColor[div_id]);
 
 		 
 		 // $("#other-content").css("background-image", "url(img/hezatramp_02.jpg)");
