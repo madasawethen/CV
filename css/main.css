@@ -204,6 +204,10 @@ header {
 	overflow: hidden;
 }
 
+.inner {
+	width: 915px;
+}
+
 #front-mti h3 {
 	float: left;
 	font-family: 'Lora';
@@ -909,14 +913,43 @@ header {
  	color: blue;
 }
 
-#otherlink3 {
+#otherlink0 p {
+	font-family: 'Playfair Display';
+	font-weight: 900;
+	font-style: 'Ultra-Bold';
+}
+
+#otherlink0 p:hover {
+	color: #ff0033;
+}
+
+#otherlink1 p {
+	font-family: 'Anton';
+/*	font-weight: 900;
+*//*	font-style: bold;*/
+}
+
+#otherlink1 p:hover {
+	color: #ff9900;
+}
+
+#otherlink2 p {
+	font-family: 'Raleway';
+	font-weight: 600;
+/*	font-style: bold;*/
+}
+
+#otherlink2 p:hover {
+	color: red;
+}
+/*#otherlink3 {
 	color: red;
 }
 
-#other-nav #PSC a {
+/*#other-nav #PSC a {
 	font-family: 'Changa One', 'Montserrat', Arial;
 	font-style: bold;
-}
+}*/
 
 #mobile-other-nav {
 	display: none;
@@ -1000,189 +1033,3 @@ header {
 
 
 
-/*THIS IS ALL MY ORIGINAL SHITTY CODE*/
-
-/*/*//**------------------GENERAL STYLE CSS*/
-
-/*body {
-	font-size: 16px;
-	color: #393e43;
-	background-color: white;
-	margin: 0 auto;
-	width: 60%;
-}
-
-h1 {
-	color: #393e43;
-	font-size: 2em;
-	font-family: Arial, sans-serif;
-
-}
-
-h2 {
-	color: #6c6c6c;
-	font-size: 1.5em;
-	font-family: Arial, sans-serif;
-
-}
-
-h3 {
-	color: #393e43;
-	font-size: 1.3em;
-	font-family: Arial, sans-serif;
-}
-
-h4 {
-	color: #7d7d7d;
-	font-size: 1.2em;
-	font-family: Arial, sans-serif;
-}
-
-a {
-	text-decoration: none;
-	color: #393e43;
-	font-size: 1em;
-	font-family: Arial, sans-serif;
-}
-
-p {
-	color: #7d7d7d;
-	font-size: 1em;
-	font-family: Arial, sans-serif;
-
-}
-*/
-
-
-
-/*------------------------wrapper DIV*/
-
-
-/*----------------------------------------------------------------------------- 
-=02 LAYOUT 
------------------------------------------------------------------------------*/
-
-/*.center-content {
-	margin: 0 auto;
-	width: 80%;
-}*/
-/*------------------------resume_header DIV*/
-
-
-
-/*------------------------header_info DIV*/
-
-/*#header_info {
-
-
-}*/
-
-/*------------MAIN NAV*/
-
-/*nav {
-
-}
-
-
-#main-nav {
-		overflow: hidden;
-		position: absolute;
-		top: 5%;
-		right: 20%;
-}
-
-#main-nav a {
-	float: right;
-	display: block;
-	height: 5%;
-	color: #ccc;
-
-}
-
-#mobile-nav {
-	display: none;
-}
-
-#mobile-nav a {
-	display: none;
-	
-	
-}*/
-
-
-
-
-/*------------------------RESUME_COLLAPSE DIV*/
-/*
-
-/*-------------------------------MTI DIV*/
-
-/*#mti {
-	clear: both;
-	background-color: #FF0086;
-	color: white;
-	font-family: ;
-}
-*/
-/*-------------------Manager DIV*/
-
-/*#manager {
-	background-color: white;
-	color: #FF0086;
-	margin: 0 auto;
-}
-
-#Tim_Gunn {
-	display: none;
-}*/
-
-
-
-/*-------------------Designer DIV*/
-/*#designer {
-	display: none;
-}*/
-/*-------------------PMS DIV*/
-
-/*#PMS {
-	display: none;
-}*/
-
-/*-------------------Reception DIV*/
-/*
-#reception {
-	display: none;
-}
-*/
-
-
-/*-------------------------------THEATRE DIV*/
-
-/*-------------------THEATRE NAV*/
-/*-------------------SLIDES*/
-
-/*-------------------------------OTHER DIV*/
-
-/*-------------------OTHER NAV*/
-/*-------------------SLIDES*/
-
-/*---------------------------------------------RESPONSIVE*/
-
-/*-------------------------------MTI DIV*/
-
-/*-------------------Manager DIV*/
-/*-------------------Designer DIV*/
-/*-------------------PMS DIV*/
-/*-------------------Reception DIV*/
-
-
-
-/*-------------------------------THEATRE DIV*/
-
-/*-------------------THEATRE NAV*/
-/*-------------------SLIDES*/
-
-/*-------------------------------OTHER DIV*/
-
-/*-------------------OTHER NAV*/
-/*-------------------SLIDES*/*/*/
