@@ -6,16 +6,22 @@ $(document).ready(function(){
 	var mtiExpanded = false;
 	var theatreExpanded = false;
 	var otherExpanded = false;
+	var last_mti;
+	var last_mtiNav;
 
+	var highlight_mtiNav=function(nav_num){
+		$("#mti" + last_mtiNav).css({"color": "white", "background-color": "#FF0093"});
+		$("#mti"+nav_num).css({"color": "#FF0093", "background-color": "white"});
+		last_mtiNav=nav_num;
+	};
 
 
 	var close_mti = function(){
-			if (mtiExpanded == true) {
-				mtiExpanded = false;
-				$("#mti-content").slideToggle(1000);
-				$("#mti-header").toggleClass('reverse-mti-header');
-				}
-
+		if (mtiExpanded == true) {
+			mtiExpanded = false;
+			$("#mti-content").slideToggle(1000);
+			$("#mti-header").toggleClass('reverse-mti-header');
+		}
 	};
 
 	var close_theatre = function(){
@@ -29,31 +35,40 @@ $(document).ready(function(){
 			}
 		};
 
-		var close_other = function(){
-			if (otherExpanded) {
-				otherExpanded= false;
-				$("#other-content").slideToggle(1000);
-				$( "#other-header" ).toggleClass('reverse-other-header');
-			}
-		};
+	var close_other = function(){
+		if (otherExpanded) {
+			otherExpanded= false;
+			$("#other-content").slideToggle(1000);
+			$( "#other-header" ).toggleClass('reverse-other-header');
+		}
+	};
 
-		var close_all = function(){
-			close_other();
-			close_theatre();
-			close_mti();
-		};
+	var close_all = function(){
+		close_other();
+		close_theatre();
+		close_mti();
+	};
+
+	var showManager=function(evt){
+		evt.preventDefault();
+		$(last_mti).hide();
+		$("#manager").show();
+		last_mti="#manager";
+		highlight_mtiNav(1);
+	};
 
 
-	var mti = function(){
+	var mti = function(evt){
 		$("#mti-content").slideToggle(1000);
 		$( "#mti-header" ).toggleClass('reverse-mti-header');
 		if (mtiExpanded) {
 			mtiExpanded= false;
 		}
 		else {
+			showManager(evt);
 			mtiExpanded = true;
-				close_theatre();
-				close_other();
+			close_theatre();
+			close_other();
 		}
 		// 
 		// $("#mti-header").css({ 
@@ -160,23 +175,51 @@ $(document).ready(function(){
  		
 	});
 
-	$("#manager-next").click(function(evt){
-		evt.preventDefault();
-		$("#manager").hide();
-		$("#designer").show();
-	});
 
-	$("#designer-next").click(function(evt){
+
+	
+	var showDesigner=function(evt){
 		evt.preventDefault();
-		$("#designer").hide();
+		$(last_mti).hide();
+		$("#designer").show();
+		last_mti="#designer";
+		highlight_mtiNav(2);
+	};
+
+	var showPMS=function(evt){
+		evt.preventDefault();
+		$(last_mti).hide();
 		$("#PMS").show();
-	});
-		
-	$("#PMS-next").click(function(evt){
+		last_mti="#PMS";
+		highlight_mtiNav(3);
+
+	};
+
+	var showReception=function(evt){
 		evt.preventDefault();
-		$("#PMS").hide();
+		$(last_mti).hide();
 		$("#reception").show();
-	});
+		last_mti="#reception";
+		highlight_mtiNav(4);
+	};
+
+	$("#mti1").click(showManager);
+	$("#mti2").click(showDesigner);
+	$("#mti3").click(showPMS);
+	$("#mti4").click(showReception);
+
+
+	$("#manager-next").click(showDesigner);
+	
+	$("#designer-prev").click(showManager);
+
+	$("#designer-next").click(showPMS);
+		
+	$("#PMS-prev").click(showDesigner);
+
+	$("#PMS-next").click(showReception);
+
+	$("#reception-prev").click(showPMS);
 
 	$("#reception-next").click(function(evt){
 		evt.preventDefault();

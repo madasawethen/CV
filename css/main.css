@@ -40,7 +40,7 @@ h1 {
 
 .center-content {
 	margin: 0 auto;
-	width: 100%;
+	width: 915px;
 	height: 100%;
 }
 
@@ -54,7 +54,7 @@ header {
 }
 
 #resume-header {
-	width: 70%;
+	/*width: 70%;*/
 	height: 200px;
 	margin: 0 auto;
 	margin-top: 3%;
@@ -199,7 +199,7 @@ header {
 }
 
 #front-mti{
-	width: 70%;
+	/*width: 70%;*/
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -242,12 +242,13 @@ header {
 -----------------------------------------------------------------------------*/
 
 #tim-gunn {
-	width: 100%;
+	/*width: 100%;*/
 	margin: 0 auto;
-
+	overflow: hidden;
 	}
 
 #tim-gunn h1 {
+	float: left;
 	color: #FF0093;
 	/*opacity: .7;*/
 	font-family: 'Lora', Arial;
@@ -259,15 +260,32 @@ header {
 	margin-bottom: 0;
 	margin-top: .5%;
 }
-
+#mti-nav a {
+	/*clear: both;*/
+	float: right;
+	display: block;
+	height: 100%;
+	width: 3%;
+	margin-right: 2%;
+/*	margin-bottom: 10%;*/
+	border-radius: 50%;
+	margin-top: 2%;
+	background-color: #FF0093; 
+	color: white;
+	text-align: center;
+	/*color: #ccc;*/
+	/*padding: 36px 18px 0 18px;*/
+	/*font-size: 17px;*/ 
+}
 /*----------------------------------------------------------------------------- 
 =06 WINDOW
 -----------------------------------------------------------------------------*/
 
 #window {
 	/*display: none;*/
-	width: 100%;
-	height: 600px;
+	/*width: 100%;*/
+	margin: 0 auto;
+	/*height: 600px;*/
 	margin-bottom: 5%;
 	overflow: hidden;
 }
@@ -277,8 +295,10 @@ header {
 
 #mti-content{
 	display: none;
-	width: 70%;
+	/*width: 70%;*/
+	height: 725px;
 	margin: 0 auto;
+
 }
 
 #manager {
@@ -352,7 +372,7 @@ header {
 #designer {
 	display: none;
 	background-color: white;
-	height: 545px;
+	/*height: 600px;*/
 	color: black;
 	overflow: hidden;
 }
@@ -396,6 +416,15 @@ header {
 	width: 19%;
 
 }
+
+.previous {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
  #designer-next {
  	font-family: 'Oswald';
  	font-style: bold;
@@ -403,6 +432,20 @@ header {
  	font-size: 1.5em;
  	color: black;
  	text-align: right;
+ 	display: block;
+ 	margin-top: 5%;
+ 	margin-bottom: 5%;
+ 	/*float: right;*/
+
+ }
+
+ #designer-prev {
+ 	font-family: 'Oswald';
+ 	font-style: bold;
+ 	font-weight: 600;
+ 	font-size: 1.5em;
+ 	color: black;
+ 	text-align: left;
  	display: block;
  	margin-top: 5%;
  	margin-bottom: 5%;
@@ -464,7 +507,9 @@ header {
 	width: 19%;
 
 }
- #PMS-next {
+
+ #PMS-prev {
+ 	float: left;
  	font-family: 'Changa One';
  	font-style: bold;
  	font-weight: 600;
@@ -475,6 +520,20 @@ header {
  	margin-top: 5%;
  	margin-bottom: 5%;
  	/*float: right;*/
+
+ }
+
+ #PMS-next {
+ 	font-family: 'Changa One';
+ 	font-style: bold;
+ 	font-weight: 600;
+ 	font-size: 1.5em;
+ 	color: black;
+ 	text-align: right;
+ 	display: block;
+ 	margin-top: 5%;
+ 	margin-bottom: 5%;
+ 	float: right;
 
  }
 
@@ -532,6 +591,20 @@ header {
 	width: 19%;
 
 }
+
+#reception-prev {
+ 	font-family: 'Libre Baskerville';
+ 	font-style: bold;
+ 	font-weight: 600;
+ 	font-size: 1.5em;
+ 	color: black;
+ 	text-align: right;
+ 	display: block;
+ 	margin-top: 4%;
+ 	margin-bottom: 6%;
+ 	float: left;
+
+ }
  #reception-next {
  	font-family: 'Libre Baskerville';
  	font-style: bold;
@@ -542,7 +615,7 @@ header {
  	display: block;
  	margin-top: 4%;
  	margin-bottom: 6%;
- 	/*float: right;*/
+ 	float: right;
 
  }
 
@@ -600,7 +673,7 @@ header {
 }
 
 #front-theatre { 
-	width: 70%;
+/*	width: 70%;*/
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -674,7 +747,7 @@ header {
 }
 
 #inner-theatre {
-	width: 70%;
+	/*width: 70%;*/
 	margin: 0 auto;
 
 }
@@ -808,13 +881,13 @@ header {
 }
 
 #inner-other {
-	width: 70%;
+	/*width: 70%;*/
 	margin: 0 auto;
 
 }
 
 #front-other { 
-	width: 70%;
+	/*width: 70%;*/
 	margin: 0 auto;
 	overflow: hidden;
 }

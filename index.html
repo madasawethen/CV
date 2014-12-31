@@ -45,7 +45,7 @@
 				<a href="#">white</a>
 				<a href="#">pink</a>	
 				<a href="#">yellow</a>			
-				<a href="t#">blue</a>					
+				<a href="#">blue</a>					
 			</nav>
 		</header>
 
@@ -67,14 +67,20 @@
 				<!-- 	manager guts -->
 				<div id="mti-content">
 
-					<div id="tim-gunn">
+					<div class="inner" id="tim-gunn">
 					<h1>Spirit Animal: Tim Gunn</h1>
 
-				</div>
+						<nav id="mti-nav">
+							<a class="nav" id="mti4" href="#">4</a>
+							<a class="nav" id="mti3" href="#">3</a>
+							<a class="nav" id="mti2" href="#">2</a>	<a class="nav" id="mti1" href="#">1</a>				
+						</nav>
 
-				<div id="spacemaker"></div>
+					</div>
 
-				<div id="window">
+					<div id="spacemaker"></div>
+
+				<div id="window" class="inner">
 
 					<div id="manager">
 
@@ -104,7 +110,7 @@
 							<img class="manager_images" src="img/puppy2.jpg">
 						</div>
 
-						<a id="manager-next" href="#designer">NEXT</a>
+						<a id="manager-next" href="#designer">Graphic Designer</a>
 					</div>
 				<!-- designer guts -->
 
@@ -134,7 +140,9 @@
 							<img class="designer-images" src="img/babyturtle.jpg">
 						</div>
 
-						<a id="designer-next" href="#PMS">It's getting good, you guys...</a>
+						<div class="previous"><a id="designer-prev" href="#designer">Art + Brand Manager</a></div>
+
+						<div class="next"><a id="designer-next" href="#PMS">Print Media Specialist</a></div>
 					</div>
 
 				<!-- Print Media Specialist guts -->
@@ -165,7 +173,9 @@
 							<img class="PMS-images" src="img/babyturtle.jpg">
 						</div>
 
-						<a id="PMS-next" href="#reception">Still Not Finished</a>
+						<div class="previous"><a id="PMS-prev" href="#designer">Graphic Designer</a></div>
+
+						<div class="next"><a id="PMS-next" href="#reception">Receptionist</a></div>
 					</div>
 
 				<!-- Receptionist guts -->
@@ -199,7 +209,9 @@
 							<img class="reception-images" src="img/babyturtle.jpg">
 						</div>
 
-						<a id="reception-next" href="theatre-content">Big Theatre Dreams</a>
+						<div class="previous"><a id="reception-prev" href="#PMS">Print Media Specialist</a></div>
+
+						<div class="next"><a id="reception-next" href="theatre-content">Big Theatre Dreams</a></div>
 					</div>
 				</div>
 			</div><!-- end of MTI div -->
@@ -360,7 +372,7 @@
 
 
 			<div id="other-content">
-				<div id="inner-other">
+				<div class="inner" id="inner-other">
 
 					<div id="stephen-sondheim">
 						<h1>Spirit Animal: Stephen Sondheim</h1>
