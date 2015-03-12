@@ -261,21 +261,18 @@ header {
 	margin-top: .5%;
 }
 #mti-nav a {
-	/*clear: both;*/
 	float: right;
 	display: block;
-	/*height: 100%;*/
-	width: 3%;
-	margin-right: 2%;
-/*	margin-bottom: 10%;*/
+	width: 40px;
+	line-height: 40px;
+	height: 40px;
+	margin-left: 2%;
 	border-radius: 50%;
-	margin-top: 2%;
+	margin-top: 1%;
+	text-align: center;
+	font-size: 17px;
 	background-color: #FF0093; 
 	color: white;
-	text-align: center;
-	/*color: #ccc;*/
-	/*padding: 36px 18px 0 18px;*/
-	/*font-size: 17px;*/ 
 }
 /*----------------------------------------------------------------------------- 
 =06 WINDOW
@@ -753,8 +750,8 @@ header {
 }
 
 #theatre-nav {
-	width: 25%;
-	height: 350px;
+	width: 36%;
+	/*height: 350px;*/
 	/*margin: 10%;*/
 	margin-top: 7%;
 	/*padding-bottom: 5%;*/
@@ -772,6 +769,7 @@ header {
  	font-style: medium;
  	font-weight: 600;
  	padding: .8%;
+ 	border-bottom: 1px solid transparent;
 }
 
 /*#theatre-nav a:visited {
@@ -779,6 +777,14 @@ header {
 }*/
 
 #theatre-nav a:hover {
+ 	/*display: block;*/
+ 	text-decoration: none;
+ 	border-bottom: 1px yellow solid;
+ /*	color: black;*/
+ /*	background-color: yellow;*/
+}
+
+#theatre-nav a.active {
  	/*display: block;*/
  	text-decoration: none;
  	color: black;
@@ -810,20 +816,25 @@ header {
 	margin-top: 7%;
 	margin-left: 2%;
 	/*margin-bottom: -5%;*/
-	padding: 5%;
 	background-color: yellow;
 	opacity: .8;
-	width: 50%;
+	width: 60%;
 	height: 320px;
-	overflow: scroll;
+	overflow: hidden;
 }
 
-.slide-current {
-	width: 100%;
+.slide {
+	margin: 10%;
+	padding-right: 3%;
+	height: 75%;
+	overflow: scroll;
+}
+/*.slide-current {*/
+	/*width: 100%;*/
 	/*height: 350px;*/
 	/*padding-bottom: 50px;*/
 	/*overflow: scroll;*/
-}
+/*}*/
 
 #yellow-box p {
 	color: black;

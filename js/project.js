@@ -52,7 +52,7 @@ $(document).ready(function(){
 	var showManager=function(evt){
 		evt.preventDefault();
 		$(last_mti).hide();
-		$("#manager").show();
+		$("#manager").fadeIn(300);
 		last_mti="#manager";
 		highlight_mtiNav(1);
 	};
@@ -152,8 +152,12 @@ $(document).ready(function(){
 	// theatre nav
 
 	$("#theatre-nav a").click(function(){
+		 $("#theatre-nav a").removeClass("active");
+		 $(this).addClass("active");
+
 		if(last_id == -1) {
-			$("#yellow-box").fadeIn(1000);
+			$("#yellow-box").fadeIn(1000).height($("#theatre-nav").height());
+			$("body").css("overflow", "hidden");
 		}
 		else {
 			$("#slide" + last_id).hide();
@@ -161,27 +165,55 @@ $(document).ready(function(){
 		 var div_id = $('#theatre-nav a').index($(this));
 		 $("#slide" + div_id).fadeIn(1000);
 		 last_id = div_id;
-		 return false;
 
+		 return false;
  	});
+
+	// $(".slide").on("mousewheel", function(e) {
+	// 	// alert("joe");
+	// 	// alert("what up");
+	// 	// e.preventDefault();
+	// 	// e.stopPropagation();
+
+	// });
+
+ 	// $(".slide").mouseover(function(){
+ 	// 	var el = $(this);
+ 	// 	$("body").on({
+		//     "mousewheel": function(e) {
+
+		//     }
+		// });
+ 	// });
 
 
  	$("#theatre-content").click(function(event){
  		if(last_id != -1 && !$(this).parents("#theatre-nav").is("#theatre-nav") && !$(this).parents("#yellow-box").is("#yellow-box")) {
  			$("#slide" + last_id).fadeOut(1000);
- 			$("#yellow-box").fadeOut(1000);
- 			last_id = -1;
+ 			$("#yellow-box").fadeOut(1000, function(){
+				$("body").css("overflow", "auto");
+ 				$("#theatre-nav a").removeClass("active");
+ 			});
+ 			last_id = -1;		 
  		}
  		
 	});
 
 
 
+	// var showManager=function(evt){
+	// 	evt.preventDefault();
+	// 	$(last_mti).hide();
+	// 	$("#manager").show();
+	// 	last_mti="#manager";
+	// 	highlight_mtiNav(1);
+	// };
+
 	
 	var showDesigner=function(evt){
 		evt.preventDefault();
 		$(last_mti).hide();
-		$("#designer").show();
+		$("#designer").fadeIn(300);
 		last_mti="#designer";
 		highlight_mtiNav(2);
 	};
@@ -189,7 +221,7 @@ $(document).ready(function(){
 	var showPMS=function(evt){
 		evt.preventDefault();
 		$(last_mti).hide();
-		$("#PMS").show();
+		$("#PMS").fadeIn(300);
 		last_mti="#PMS";
 		highlight_mtiNav(3);
 
@@ -198,7 +230,7 @@ $(document).ready(function(){
 	var showReception=function(evt){
 		evt.preventDefault();
 		$(last_mti).hide();
-		$("#reception").show();
+		$("#reception").fadeIn(300);
 		last_mti="#reception";
 		highlight_mtiNav(4);
 	};
@@ -278,10 +310,7 @@ $(document).ready(function(){
  		}
  		
 	});
-
-
 });
-
 
 
 
