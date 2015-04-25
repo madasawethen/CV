@@ -68,6 +68,7 @@ $(document).ready(function(){
 			showManager(evt);
 			mtiExpanded = true;
 			close_theatre();
+			resetOther();
 			close_other();
 		}
 		// 
@@ -90,6 +91,7 @@ $(document).ready(function(){
 		else {
 			theatreExpanded = true;
 			close_mti();
+			resetOther();
 			close_other();
 		}
 
@@ -196,7 +198,6 @@ $(document).ready(function(){
  			});
  			last_id = -1;		 
  		}
- 		
 	});
 
 
